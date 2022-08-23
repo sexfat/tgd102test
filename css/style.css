@@ -30,17 +30,41 @@ h1 {
 .wrapper h1 span {
   font-size: 10px;
 }
-.wrapper .box {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(255, 49, 49);
+.wrapper .btn {
+  width: 200px;
+  background-color: rgb(0, 153, 255);
   transition: all 0.3s ease;
+  text-align: center;
+  padding: 10px 0px;
+  cursor: pointer;
 }
-.wrapper .box::after {
+.wrapper .btn::after {
   content: "";
 }
-.wrapper .box:hover {
+.wrapper .btn:hover {
   background-color: bisque;
+}
+.wrapper .btn-reset {
+  width: 200px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: rgb(104, 104, 104);
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+.wrapper .btn-reset:hover {
+  background-color: rgb(60, 60, 60);
+}
+.wrapper .btn-warming {
+  width: 200px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: rgb(255, 238, 0);
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+.wrapper .btn-warming:hover {
+  background-color: rgb(151, 168, 28);
 }
 
 /*# sourceMappingURL=style.css.map */
