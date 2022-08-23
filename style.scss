@@ -28,7 +28,7 @@ h1 {
 $a : 10px;
 
 .a {
-    $a : 20px !default;//權重變最小
+    $a: 20 px !default; //權重變最小
     font-size: $a;
     //$b: 30px !global;
 }
@@ -38,9 +38,41 @@ $a : 10px;
 // }
 
 
+// .wrapper h1 {
+//     color: $color;
+// }
 
+// .wrapper .box {
+//     width: 100px;
+//     height: 100px;
+// }
 
+//巢狀
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
 
+    h1 {
+        color: $color;
 
+        span {
+            font-size: 10px;
+        }
+    }
 
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 49, 49);
+        transition: all .3s ease;
+        &::after {
+           content: '';
+        }//偽元素
+        &:hover {
+          background-color: bisque;
+        }
 
+    }
+   
+}
