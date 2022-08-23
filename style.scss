@@ -1,6 +1,40 @@
-$color : #000;
+/*css 註解*/
+// scss 註解
+
+$color : rgb(255, 227, 66);
+$bcg : rgb(35, 35, 35);
+$bodyFontsize : 16px;
+$body_padding : 10px;
+$path : 'images';
+$class : 'banner_01';
+
 
 body {
-   margin: 0; 
-   color : $color;
+    margin: null;
+    color: $color;
+    background-color: $bcg;
+    font-size: $bodyFontsize;
+    padding: $body_padding;
 }
+
+.#{$class} {
+    background-image: url('#{$path}/img.png');
+}
+
+h1 {
+    font-size: 46px;
+}
+
+$a : 10px;
+
+.a {
+    $a : 20px !default;//權重變最小
+    font-size: $a;
+    //$b: 30px !global;
+}
+
+// .b {
+//     font-size: $b;
+// }
+
+

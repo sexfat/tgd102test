@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*css 註解*/
+body {
+  color: rgb(255, 227, 66);
+  background-color: rgb(35, 35, 35);
+  font-size: 16px;
+  padding: 10px;
+}
+
+.banner_01 {
+  background-image: url("images/img.png");
+}
+
+h1 {
+  font-size: 46px;
+}
+
+.a {
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
