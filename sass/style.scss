@@ -7,11 +7,14 @@
 
 //mixin
 @import 'mixin/mixin';
+
 //component
 @import 'component/btn';
+
 //layout
 @import 'layout/header';
 @import 'layout/footer';
+
 //page
 @import 'page/index';
 @import 'page/about';
@@ -62,9 +65,26 @@ $a : 10px;
 
 //巢狀
 .wrapper {
-    width: 1300px;
-    margin: 0 auto;
+    width: 100%;
     background-color: #fff;
+
+    .content {
+        @include center();
+        width: 1366px;
+        background-color: rgb(233, 233, 233);
+    }
+
+    .center {
+        @include box-center;
+        height: 600px;
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: $gray02;
+        }
+
+    }
 
     h1 {
         color: $color;
@@ -80,6 +100,7 @@ $a : 10px;
         text-align: center;
         padding: 15px 0px;
         cursor: pointer;
+
         &-submit {
             margin-top: $space01;
             background-color: rgb(0, 98, 255);
@@ -89,6 +110,7 @@ $a : 10px;
                 background-color: rgb(0, 3, 155);
             }
         }
+
         &-reset {
             background-color: rgb(104, 104, 104);
             color: rgb(255, 255, 255);
@@ -97,6 +119,7 @@ $a : 10px;
                 background-color: rgb(60, 60, 60);
             }
         }
+
         &-warming {
             background-color: rgb(255, 238, 0);
             color: rgb(255, 255, 255);

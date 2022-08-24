@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*css 註解*/
+.box_center {
+  margin: 10px auto 0;
+}
+
 body {
   color: rgb(255, 227, 66);
   background-color: rgb(35, 35, 35);
@@ -20,9 +24,24 @@ h1 {
 }
 
 .wrapper {
-  width: 1300px;
-  margin: 0 auto;
+  width: 100%;
   background-color: #fff;
+}
+.wrapper .content {
+  margin: 10px auto 0;
+  width: 1366px;
+  background-color: rgb(233, 233, 233);
+}
+.wrapper .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.wrapper .center .box {
+  width: 300px;
+  height: 300px;
+  background-color: #a1a1a1;
 }
 .wrapper h1 {
   color: rgb(255, 227, 66);

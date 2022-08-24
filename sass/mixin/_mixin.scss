@@ -1,0 +1,16 @@
+
+//置中
+@mixin center(){
+   margin: 10px auto 0;
+}
+
+@mixin  box-center(){
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.box_center {
+  @include center();
+}
