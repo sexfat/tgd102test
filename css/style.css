@@ -11,13 +11,13 @@
 .btn-default:hover {
   background-color: #991400;
 }
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 720px) {
   .btn-default {
     width: 80%;
     margin: 0 auto 0;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 414px) {
   .btn-default {
     width: 100%;
   }
@@ -34,7 +34,7 @@
 .btn-large:hover {
   background-color: #003599;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 414px) {
   .btn-large {
     width: 100%;
   }
@@ -51,7 +51,7 @@
 .btn-small:hover {
   background-color: #910099;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 414px) {
   .btn-small {
     width: 100%;
   }
@@ -62,7 +62,7 @@ header h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: inline-block;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 414px) {
   header h1 {
     font-size: 100px;
     color: #f20 !important;

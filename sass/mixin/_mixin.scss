@@ -27,13 +27,13 @@
 
 //手機板
 @mixin m(){
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $m) {
      @content;    
     }
 }
 
 @mixin t(){
-   @media screen and (max-width: 996px) {
+   @media screen and (max-width: $t) {
     @content;    
    }
 }
