@@ -103,4 +103,52 @@ h3{font-size: $bodyFontsize * 3;}
 h4{font-size: $bodyFontsize * 2;}
 h5{font-size: $bodyFontsize * 1;}
 
+// @if @else @else if
+
+$f : true;
+
+.d {
+   @if $f {
+     color: #000
+   }
+   width: 100px;
+}
+
+
+@mixin layout($w){
+   @if $w == 100% {
+    width: 100%;
+   }@else {
+     @include center($w)
+   }
+}
+
+.container {
+    @include layout(100%);
+}
+
+@mixin fontstyle($size , $f:default){
+    @if $f == bold {
+        font-weight: 900;
+        font-size: $size; 
+    } 
+    @else if $f == default {
+        font-weight: 400;
+        font-size: $size; 
+    } 
+    @else if $f == thin {
+        font-weight: 100;
+        font-size: $size; 
+    } 
+}
+
+.title {
+  @include fontstyle(48px ,bold)
+}
+
+
+
+
+
+
 
