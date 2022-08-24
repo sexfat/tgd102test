@@ -75,5 +75,25 @@
    }  
  }
 
+ // for迴圈
+
+ //grid
+@mixin grid($col, $breakpoint:null) {
+   @for $i from 1 through $col {
+      @if $breakpoint != null {
+       .col-#{$breakpoint}-#{$i} {
+           width: $i /$col *100%;
+           box-sizing: border-box;
+       }
+      }@else {
+       .col-#{$i} {
+           width: $i /$col *100%;
+           box-sizing: border-box;
+       }
+      }  
+      
+   }
+}
+
 
 

@@ -71,48 +71,63 @@ $a : 10px;
 }
 
 
-@mixin c(){
+@mixin c() {
     width: 100px;
-    @content;// 擴增屬性
- }
+    @content; // 擴增屬性
+}
 
 .a {
-  @include c(){
-    height: 100px;
-    background-color: #fff;
-  }
+    @include c() {
+        height: 100px;
+        background-color: #fff;
+    }
 }
 
 
 .b {
-  @include c();
-  margin-top: 100px;
+    @include c();
+    margin-top: 100px;
 
 }
 
 
 .w {
-   width:  100em + 100;
-   height: 100 - 10 +px ;
-   margin: 10 * 10 +px;
-   font: 100 / 25 +em // font 屬性 font-size/line-height  
+    width: 100em + 100;
+    height: 100 - 10 +px;
+    margin: 10 * 10 +px;
+    font: 100 / 25 +em // font 屬性 font-size/line-height  
 }
 
-h1{font-size: $bodyFontsize * 5;}
-h2{font-size: $bodyFontsize * 4;}
-h3{font-size: $bodyFontsize * 3;}
-h4{font-size: $bodyFontsize * 2;}
-h5{font-size: $bodyFontsize * 1;}
+h1 {
+    font-size: $bodyFontsize * 5;
+}
+
+h2 {
+    font-size: $bodyFontsize * 4;
+}
+
+h3 {
+    font-size: $bodyFontsize * 3;
+}
+
+h4 {
+    font-size: $bodyFontsize * 2;
+}
+
+h5 {
+    font-size: $bodyFontsize * 1;
+}
 
 // @if @else @else if
 
 $f : true;
 
 .d {
-   @if $f {
-     color: #000
-   }
-   width: 100px;
+    @if $f {
+        color: #000
+    }
+
+    width: 100px;
 }
 
 .container {
@@ -120,26 +135,12 @@ $f : true;
 }
 
 .title {
-  @include fontstyle(48px ,bold)
+    @include fontstyle(48px, bold)
 }
 
 .subtitle {
-    @include fontstyle(20px ,thin)
-  }
-  
-// for迴圈
-@for $i from 1 through 10 {
-   .top_#{$i} {
-     margin-top: $i * 1px;
-   }
-}  
-
-
-
-
-
-
-
+    @include fontstyle(20px, thin)
+}
 
 
 
