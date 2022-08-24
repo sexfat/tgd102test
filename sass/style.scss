@@ -1,9 +1,23 @@
 /*css 註解*/
 // scss 註解
-
+// var
 @import 'base/font';
 @import 'base/color';
 @import 'base/other';
+
+//mixin
+@import 'mixin/mixin';
+//component
+@import 'component/btn';
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+//page
+@import 'page/index';
+@import 'page/about';
+
+
+
 
 
 
@@ -67,6 +81,7 @@ $a : 10px;
         padding: 15px 0px;
         cursor: pointer;
         &-submit {
+            margin-top: $space01;
             background-color: rgb(0, 98, 255);
             color: rgb(255, 255, 255);
 
