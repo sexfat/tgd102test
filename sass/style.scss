@@ -69,14 +69,13 @@ $a : 10px;
     background-color: #fff;
 
     .content {
-        @include center();
-        width: 1366px;
-        background-color: rgb(233, 233, 233);
+        @include center(1200px, 10px, rgb(241, 241, 241) );
     }
 
     .center {
-        @include box-center;
+        @include box-center();
         height: 600px;
+        background-color: $gray01;
 
         .box {
             width: 300px;

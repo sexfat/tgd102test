@@ -1,9 +1,5 @@
 @charset "UTF-8";
 /*css 註解*/
-.box_center {
-  margin: 10px auto 0;
-}
-
 body {
   color: rgb(255, 227, 66);
   background-color: rgb(35, 35, 35);
@@ -28,15 +24,16 @@ h1 {
   background-color: #fff;
 }
 .wrapper .content {
+  width: 1200px;
   margin: 10px auto 0;
-  width: 1366px;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(241, 241, 241);
 }
 .wrapper .center {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 600px;
+  background-color: #5f5f5f;
 }
 .wrapper .center .box {
   width: 300px;
