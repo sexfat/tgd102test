@@ -138,7 +138,7 @@ header nav ul li {
 body {
   color: rgb(26, 26, 26);
   background-color: rgb(35, 35, 35);
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px;
 }
 
@@ -168,4 +168,31 @@ h1 {
 .b {
   width: 100px;
   margin-top: 100px;
+}
+
+.w {
+  width: 200em;
+  height: 90px;
+  margin: 100px;
+  font: 4em;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

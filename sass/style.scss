@@ -88,3 +88,19 @@ $a : 10px;
   margin-top: 100px;
 
 }
+
+
+.w {
+   width:  100em + 100;
+   height: 100 - 10 +px ;
+   margin: 10 * 10 +px;
+   font: 100 / 25 +em // font 屬性 font-size/line-height  
+}
+
+h1{font-size: $bodyFontsize * 5;}
+h2{font-size: $bodyFontsize * 4;}
+h3{font-size: $bodyFontsize * 3;}
+h4{font-size: $bodyFontsize * 2;}
+h5{font-size: $bodyFontsize * 1;}
+
+
