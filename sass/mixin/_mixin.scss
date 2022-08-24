@@ -6,8 +6,23 @@
    background-color:$bgc;
 } // 預設值 null
 
-@mixin  box-center(){
+@mixin box-center(){
    display: flex;
    justify-content: center;
    align-items: center;
 }
+
+@mixin btn($w , $p , $bgc , $r:null){
+  width:$w ;
+  padding:$p ;
+  background-color: $bgc;
+  text-align: center;
+  border-radius: $r;
+  transition: all .3s ease ;
+  cursor: pointer;
+  &:hover {
+   background-color: darken($bgc , 20);
+  }
+}
+
+

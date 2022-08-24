@@ -1,0 +1,65 @@
+.index {
+    .content {
+        @include center(1200px, 10px, rgb(241, 241, 241) );
+    }
+
+    .center {
+        @include box-center();
+        height: 600px;
+        background-color: $gray01;
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: $gray02;
+        }
+
+    }
+
+    h1 {
+        color: $color;
+
+        span {
+            font-size: 10px;
+        }
+    }
+
+    .btn {
+        width: 300px;
+        transition: all .3s ease;
+        text-align: center;
+        padding: 15px 0px;
+        cursor: pointer;
+
+        &-submit {
+            margin-top: $space01;
+            background-color: rgb(0, 98, 255);
+            color: rgb(255, 255, 255);
+
+            &:hover {
+                background-color: rgb(0, 3, 155);
+            }
+        }
+
+        &-reset {
+            background-color: rgb(104, 104, 104);
+            color: rgb(255, 255, 255);
+
+            &:hover {
+                background-color: rgb(60, 60, 60);
+            }
+        }
+
+        &-warming {
+            background-color: rgb(255, 238, 0);
+            color: rgb(255, 255, 255);
+
+            &:hover {
+                background-color: rgb(151, 168, 28);
+            }
+
+        }
+    }
+
+
+}

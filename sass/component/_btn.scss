@@ -1,0 +1,10 @@
+.btn-default {
+    @include btn(150px, 15px, #f20)
+}
+
+.btn-large {
+    @include btn(300px, 15px, rgb(0, 89, 255))
+}
+.btn-small {
+    @include btn(100px, 10px, rgb(242, 0, 255))
+}
