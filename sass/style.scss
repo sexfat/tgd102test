@@ -10,6 +10,7 @@
 
 //component
 @import 'component/btn';
+@import 'component/space';
 
 //layout
 @import 'layout/header';
@@ -114,8 +115,6 @@ $f : true;
    width: 100px;
 }
 
-
-
 .container {
     @include layout(100%);
 }
@@ -128,6 +127,15 @@ $f : true;
     @include fontstyle(20px ,thin)
   }
   
+// for迴圈
+@for $i from 1 through 10 {
+   .top_#{$i} {
+     margin-top: $i * 1px;
+   }
+}  
+
+
+
 
 
 

@@ -65,5 +65,15 @@
    }
 }
 
+//space 
+
+@mixin space($num){
+   @for $i from 1 through $num{
+     .m#{$i}{
+       margin-top:$i * 1px ;
+     }
+   }  
+ }
+
 
 
