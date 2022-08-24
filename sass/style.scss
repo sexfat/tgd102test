@@ -1,12 +1,11 @@
 /*css 註解*/
 // scss 註解
 
-$color : rgb(255, 227, 66);
-$bcg : rgb(35, 35, 35);
-$bodyFontsize : 16px;
-$body_padding : 10px;
-$path : 'images';
-$class : 'banner_01';
+@import 'base/font';
+@import 'base/color';
+@import 'base/other';
+
+
 
 
 body {
@@ -49,7 +48,7 @@ $a : 10px;
 
 //巢狀
 .wrapper {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
     background-color: #fff;
 
