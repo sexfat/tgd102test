@@ -1,8 +1,13 @@
 header {
  h1 {
-   font-size: 18px;
+   font-size: 30px;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    display:inline-block;
+   @include m(){
+    font-size: 100px;
+    color: #f20!important;
+
+   }
  }
  nav {
    display:inline-block;

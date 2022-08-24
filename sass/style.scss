@@ -22,9 +22,6 @@
 
 
 
-
-
-
 body {
     margin: null;
     color: $color;
@@ -69,5 +66,25 @@ $a : 10px;
     background-color: #fff;
 
 
+
+}
+
+
+@mixin c(){
+    width: 100px;
+    @content;// 擴增屬性
+ }
+
+.a {
+  @include c(){
+    height: 100px;
+    background-color: #fff;
+  }
+}
+
+
+.b {
+  @include c();
+  margin-top: 100px;
 
 }

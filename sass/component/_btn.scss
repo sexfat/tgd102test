@@ -1,10 +1,24 @@
 .btn-default {
-    @include btn(150px, 15px, #f20)
+    @include btn(150px, 15px, #f20);
+    @include t(){
+        @include center(80%);
+    }
+    @include m(){
+        width: 100%;
+    }
+  
 }
 
 .btn-large {
-    @include btn(300px, 15px, rgb(0, 89, 255))
+    @include btn(300px, 15px, rgb(0, 89, 255));
+    @include m(){
+       width: 100%;
+
+    }
 }
 .btn-small {
-    @include btn(100px, 10px, rgb(242, 0, 255))
+    @include btn(100px, 10px, rgb(242, 0, 255));
+    @include m(){
+        width: 100%;
+    }
 }

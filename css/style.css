@@ -11,6 +11,17 @@
 .btn-default:hover {
   background-color: #991400;
 }
+@media screen and (max-width: 996px) {
+  .btn-default {
+    width: 80%;
+    margin: 0 auto 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .btn-default {
+    width: 100%;
+  }
+}
 
 .btn-large {
   width: 300px;
@@ -22,6 +33,11 @@
 }
 .btn-large:hover {
   background-color: #003599;
+}
+@media screen and (max-width: 720px) {
+  .btn-large {
+    width: 100%;
+  }
 }
 
 .btn-small {
@@ -35,11 +51,22 @@
 .btn-small:hover {
   background-color: #910099;
 }
+@media screen and (max-width: 720px) {
+  .btn-small {
+    width: 100%;
+  }
+}
 
 header h1 {
-  font-size: 18px;
+  font-size: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: inline-block;
+}
+@media screen and (max-width: 720px) {
+  header h1 {
+    font-size: 100px;
+    color: #f20 !important;
+  }
 }
 header nav {
   display: inline-block;
@@ -130,4 +157,15 @@ h1 {
 .wrapper {
   width: 100%;
   background-color: #fff;
+}
+
+.a {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.b {
+  width: 100px;
+  margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */
