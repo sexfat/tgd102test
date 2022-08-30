@@ -142,5 +142,39 @@ $f : true;
     @include fontstyle(20px, thin)
 }
 
+//each迴圈
+//list
+$list : banner01 banner02 banner03 banner04;
+
+@each $img in $list {
+   .img-#{$img} {
+      background-image: url('images/#{$img}.jpg');
+      background-repeat: no-repeat;
+      background-size: cover; 
+   }
+}
+
+$map :(
+ 'space01' : 10px,
+ 'space02' : 20px,
+ 'space03' : 30px,
+);  // map
+
+@each $key , $val in $map {
+  .#{$key} {
+    margin-top: $val;
+  }
+}
+
+
+// .space1 {
+//     margin-top: map-get($map , space1 );
+// }
+
+// .space2 {
+//     margin-top: map-get($map , space2);
+// }
+
+
 
 

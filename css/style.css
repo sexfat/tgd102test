@@ -5,18 +5,21 @@
   padding: 15px;
   background-color: #f20;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   cursor: pointer;
 }
+
 .btn-default:hover {
   background-color: #991400;
 }
+
 @media screen and (max-width: 720px) {
   .btn-default {
     width: 80%;
     margin: 0 auto 0;
   }
 }
+
 @media screen and (max-width: 414px) {
   .btn-default {
     width: 100%;
@@ -26,14 +29,16 @@
 .btn-large {
   width: 300px;
   padding: 15px;
-  background-color: rgb(0, 89, 255);
+  background-color: #0059ff;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   cursor: pointer;
 }
+
 .btn-large:hover {
   background-color: #003599;
 }
+
 @media screen and (max-width: 414px) {
   .btn-large {
     width: 100%;
@@ -43,14 +48,16 @@
 .btn-small {
   width: 100px;
   padding: 10px;
-  background-color: rgb(242, 0, 255);
+  background-color: #f200ff;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   cursor: pointer;
 }
+
 .btn-small:hover {
   background-color: #910099;
 }
+
 @media screen and (max-width: 414px) {
   .btn-small {
     width: 100%;
@@ -459,23 +466,27 @@
 
 header h1 {
   font-size: 30px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: inline-block;
 }
+
 @media screen and (max-width: 414px) {
   header h1 {
     font-size: 100px;
     color: #f20 !important;
   }
 }
+
 header nav {
   display: inline-block;
 }
+
 header nav ul {
   display: flex;
   list-style: none;
   padding: 0;
 }
+
 header nav ul li {
   width: 100px;
   padding: 10px;
@@ -485,8 +496,9 @@ header nav ul li {
 .index .content {
   width: 1200px;
   margin: 10px auto 0;
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
 }
+
 .index .center {
   display: flex;
   justify-content: center;
@@ -494,50 +506,61 @@ header nav ul li {
   height: 600px;
   background-color: #5f5f5f;
 }
+
 .index .center .box {
   width: 300px;
   height: 300px;
   background-color: #a1a1a1;
 }
+
 .index h1 {
-  color: rgb(26, 26, 26);
+  color: #1a1a1a;
 }
+
 .index h1 span {
   font-size: 10px;
 }
+
 .index .btn {
   width: 300px;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   text-align: center;
   padding: 15px 0px;
   cursor: pointer;
 }
+
 .index .btn-submit {
   margin-top: 10px;
-  background-color: rgb(0, 98, 255);
-  color: rgb(255, 255, 255);
+  background-color: #0062ff;
+  color: white;
 }
+
 .index .btn-submit:hover {
-  background-color: rgb(0, 3, 155);
+  background-color: #00039b;
 }
+
 .index .btn-reset {
-  background-color: rgb(104, 104, 104);
-  color: rgb(255, 255, 255);
+  background-color: #686868;
+  color: white;
 }
+
 .index .btn-reset:hover {
-  background-color: rgb(60, 60, 60);
+  background-color: #3c3c3c;
 }
+
 .index .btn-warming {
-  background-color: rgb(255, 238, 0);
-  color: rgb(255, 255, 255);
+  background-color: #ffee00;
+  color: white;
 }
+
 .index .btn-warming:hover {
-  background-color: rgb(151, 168, 28);
+  background-color: #97a81c;
 }
 
 body {
-  color: rgb(26, 26, 26);
-  background-color: rgb(35, 35, 35);
+  margin: null;
+  color: #1a1a1a;
+  background-color: #232323;
   font-size: 20px;
   padding: 10px;
 }
@@ -614,4 +637,41 @@ h5 {
 .subtitle {
   font-weight: 100;
   font-size: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.img-banner01 {
+  background-image: url("images/banner01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-banner02 {
+  background-image: url("images/banner02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-banner03 {
+  background-image: url("images/banner03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-banner04 {
+  background-image: url("images/banner04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.space01 {
+  margin-top: 10px;
+}
+
+.space02 {
+  margin-top: 20px;
+}
+
+.space03 {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */
