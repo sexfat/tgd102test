@@ -674,4 +674,76 @@ h5 {
 .space03 {
   margin-top: 30px;
 }
+
+.heading1 {
+  font-size: 80px;
+}
+
+.heading2 {
+  font-size: 56px;
+}
+
+.heading3 {
+  font-size: 44px;
+}
+
+.primary1 {
+  color: #01848c;
+}
+
+.primary2 {
+  color: #0197a0;
+}
+
+.primary3 {
+  color: #02aab5;
+}
+
+.primary4 {
+  color: #02bdc9;
+}
+
+.primary5 {
+  color: #02d0dd;
+}
+
+.secondary1 {
+  color: #f7bbbc;
+}
+
+.secondary2 {
+  color: #f9cece;
+}
+
+.secondary3 {
+  color: #fbe0e0;
+}
+
+.secondary4 {
+  color: #fef2f2;
+}
+
+.secondary5 {
+  color: white;
+}
+
+.third1 {
+  color: #002670;
+}
+
+.third2 {
+  color: #002d85;
+}
+
+.third3 {
+  color: #003499;
+}
+
+.third4 {
+  color: #003aae;
+}
+
+.third5 {
+  color: #0041c2;
+}
 /*# sourceMappingURL=style.css.map */

@@ -147,24 +147,55 @@ $f : true;
 $list : banner01 banner02 banner03 banner04;
 
 @each $img in $list {
-   .img-#{$img} {
-      background-image: url('images/#{$img}.jpg');
-      background-repeat: no-repeat;
-      background-size: cover; 
-   }
+    .img-#{$img} {
+        background-image: url('images/#{$img}.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
-$map :(
- 'space01' : 10px,
- 'space02' : 20px,
- 'space03' : 30px,
-);  // map
+//space
+$map :('space01' : 10px,
+    'space02' : 20px,
+    'space03' : 30px,
+); // map
 
-@each $key , $val in $map {
-  .#{$key} {
-    margin-top: $val;
-  }
+@each $key,
+$val in $map {
+    .#{$key} {
+        margin-top: $val;
+    }
 }
+
+// font
+$font : ('heading1' : 80px,
+    'heading2' : 56px,
+    'heading3' : 44px,
+);
+
+@each $title,
+$size in $font {
+    .#{$title} {
+        font-size: $size;
+    }
+}
+
+// color
+$color : ('primary' : #017178,
+    'secondary' : #f5a9aa,
+    'third' : #001f5c,
+);
+
+@each $title,$val in $color {
+    @for $i from 1 through 5 {
+        .#{$title}#{$i} {
+            color: lighten($val, $i * 4%);
+        }
+    }
+}
+
+
+
 
 
 // .space1 {
@@ -174,7 +205,3 @@ $map :(
 // .space2 {
 //     margin-top: map-get($map , space2);
 // }
-
-
-
-
