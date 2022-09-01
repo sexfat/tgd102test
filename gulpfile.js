@@ -106,6 +106,14 @@ function includeHTML() {
 exports.html =  includeHTML;
 
 
+function w() {
+    watch(['*.html' , 'layout/*.html'] , includeHTML)  
+    watch(['sass/*.scss' , 'sass/**/*.scss'] , sassstyle)  
+}
+
+exports.watchall = w
+
+
 
 
 
