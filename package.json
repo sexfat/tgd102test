@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/sexfat/tgd102test/issues"
   },
-  "homepage": "https://github.com/sexfat/tgd102test#readme"
+  "homepage": "https://github.com/sexfat/tgd102test#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {}
 }
