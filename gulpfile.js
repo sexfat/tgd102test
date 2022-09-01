@@ -131,7 +131,7 @@ function browser(done) {
     done();
 }
 
-exports.default = browser;
+exports.default = series(parallel(includeHTML , sassstyle) ,browser);
 
 
 
