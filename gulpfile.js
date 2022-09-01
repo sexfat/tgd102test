@@ -34,6 +34,17 @@ exports.sync = parallel(taskA , taskB);
 exports.async = series(taskA , taskB);
 
 
+// src dest
+function move(){
+   return src('*.html').pipe(dest('dist'));
+}
+
+exports.m = move
+
+
+
+
+
 
 
 
