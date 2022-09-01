@@ -42,16 +42,47 @@ function move(){
 exports.m = move
 
 
+// rename 
+const rename = require('gulp-rename');
 //js uglify
 const uglify = require('gulp-uglify');
 
 function  Jsminify(){
     return src('js/*.js')
     .pipe(uglify())
+    .pipe(rename({
+        extname: '.min.js' 
+    }))
     .pipe(dest('dist/js'))
 }
 
 exports.uglify = Jsminify;
+
+
+// css minify
+const cleanCSS = require('gulp-clean-css');
+
+function cssminify(){
+  return src('sass/*.css')
+  .pipe(cleanCSS())
+  .pipe(rename({
+    extname: '.min.css' 
+}))
+  .pipe(dest('dist/css'));
+}
+
+
+exports.css = cssminify 
+
+
+
+
+
+
+
+
+
+
  
 
 
