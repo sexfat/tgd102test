@@ -63,7 +63,7 @@ exports.uglify = Jsminify;
 const cleanCSS = require('gulp-clean-css');
 
 function cssminify(){
-  return src('sass/*.css')
+  return src(['dist/css/*.css' , '!dist/css/style.min.css'])
   .pipe(cleanCSS())
   .pipe(rename({
     extname: '.min.css' 
@@ -73,6 +73,37 @@ function cssminify(){
 
 
 exports.css = cssminify 
+
+
+//sass
+
+const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
+
+function sassstyle(){ 
+    return src('sass/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(dest('dist/css')) 
+}
+
+exports.style = sassstyle
+// exports.style = series(sassstyle ,cssminify)
+
+
+const fileinclude = require('gulp-file-include');
+
+function includeHTML() {
+    return src('*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(dest('./dist'));
+}
+
+exports.html =  includeHTML;
 
 
 
