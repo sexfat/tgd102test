@@ -42,6 +42,22 @@ function move(){
 exports.m = move
 
 
+//js uglify
+const uglify = require('gulp-uglify');
+
+function  Jsminify(){
+    return src('js/*.js')
+    .pipe(uglify())
+    .pipe(dest('dist/js'))
+}
+
+exports.uglify = Jsminify;
+ 
+
+
+
+
+
 
 
 
