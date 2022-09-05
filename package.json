@@ -1,0 +1,27 @@
+{
+  "name": "tgd102",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sexfat/tgd102test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sexfat/tgd102test/issues"
+  },
+  "homepage": "https://github.com/sexfat/tgd102test#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "gsap": "^3.11.1",
+    "jquery": "^3.6.1"
+  }
+}
