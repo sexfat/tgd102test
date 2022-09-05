@@ -1,7 +1,7 @@
 console.log('webpack ok');
 import $ from 'jquery';
 import {gsap} from 'gsap';
-import '../sass/style.scss';
+import '../css/style.css';
 
 $('body').css('background-color' , 'red');
 gsap.to('.box' , {
