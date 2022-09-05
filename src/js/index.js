@@ -8,10 +8,10 @@ $('body').css('background-color' , 'red');
 gsap.to('.box' , {
     x : 400,
     y: 200,
-    duration: 4,
+    duration: .3,
     rotation : 270,
     scale : 2,
-    backgroundColor : 'yellow',
+    backgroundColor : '#333',
     borderRadius : '50%',
     repeat : -1,
     yoyo: true

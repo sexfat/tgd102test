@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "安裝套件": "npm i"
+    "安裝套件": "npm i",
+    "上線": "webpack -p",
+    "開啟服務器" : "webpack-dev-server"
   },
   "repository": {
     "type": "git",
